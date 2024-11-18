@@ -1,6 +1,3 @@
-gfg problem - "Second largest number"
-
-
 class Solution {
   public:
     // Function returns the second
