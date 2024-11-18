@@ -1,0 +1,13 @@
+class Solution {
+  public:
+    void reverseArray(vector<int> &arr) {
+        // code here
+        int num;
+        int max = arr.size();
+        for(int i=0; i<max/2; i++){
+            num = arr[i];
+            arr[i] = arr[max-i-1];
+            arr[max - i-1] = num;
+        }
+    }
+};
