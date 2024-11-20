@@ -98,7 +98,10 @@ Space Complexity - O(1)
     reverse(arr.begin(), arr.end());
 
 
+> Stable Partition
 
+used to divide a vector into different parts based on condition which give output in true/false form
 
+    stable_partition( start_iterator, end_iterator, [](int n) { return n!=0;});
 
 
