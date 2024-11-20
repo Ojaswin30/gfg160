@@ -17,3 +17,23 @@ class Solution {
         }
     }
 };
+
+
+
+
+
+
+
+
+
+
+or 
+
+
+
+
+
+
+
+
+stable_partition(arr.begin(), arr.end(), [](int n) { return n != 0; });
