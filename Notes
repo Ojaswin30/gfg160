@@ -22,7 +22,9 @@ remove the last element
     array_name.pop_back();
 
 Erase element at any index
-    vec.erase(vec.begin() + index);
+    array_name.erase(arr.begin() + index);
+or
+    array_name.erase(start_iterator, end_iterator);
 
 size of vector
     array_name.size();
