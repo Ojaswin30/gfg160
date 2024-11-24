@@ -1,0 +1,18 @@
+class Solution {
+  public:
+    // Function to find the sum of contiguous subarray with maximum sum.
+    int maxSubarraySum(vector<int> &arr) {
+        // code here...
+        
+        // subarray is contiguous part of an array. it is a slice of array.
+        
+        int res=arr[0];
+        int maxres = arr[0];
+        
+        for(int i=1; i<arr.size(); i++){
+            maxres = max(maxres + arr[i], arr[i]); // used to find the sum of each and every subarrays sepeartly
+            res = max(res,maxres); // compare the result of individual subarrays
+        }
+        return res;
+    }
+};
