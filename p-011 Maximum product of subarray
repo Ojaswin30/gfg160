@@ -1,0 +1,33 @@
+class Solution {
+  public:
+    // Function to find maximum product subarray
+    int maxProduct(vector<int> &arr) {
+        // Your Code Here
+        int res = arr[0];
+        // int maxproduct = arr[0];
+        
+        for(int i =0; i<arr.size(); i++){
+            int maxproduct=1;
+            for(int j=i;j<arr.size();j++){
+                // if(abs(maxproduct * arr[j])>abs(arr[j])){
+                    maxproduct = maxproduct * arr[j];
+                // }
+                // else{
+                //     maxproduct = res;
+                // }
+                // maxproduct = max(maxproduct * arr[i], arr[i]);
+            
+            res = max(res, maxproduct);
+        }}
+        
+        return res;
+        
+        
+        // int res = arr[0];
+        
+        // for(int i=1; i<arr.size();i++){
+        //     res = max(res * arr[i],arr[i]);
+        // }
+        // return res;
+    }
+};
