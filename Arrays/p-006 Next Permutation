@@ -1,0 +1,43 @@
+lexicographically - numerically next digit in the sequence 
+for example- permutation of string (1,2,3) are - 
+123
+132
+213
+231
+312
+321
+
+the next permututaion of a 132 will be 213 because it is the next permutation which just bigger then the number and closest.
+
+
+class Solution {
+  public:
+    void nextPermutation(vector<int>& arr) {
+        // code here
+        
+        int temp=-1;
+        for(int i=0; i<arr.size()-1;i++){
+            if(arr[i]<arr[i+1]){
+                temp=i;
+                // break;
+            }
+        }
+        if(temp==-1){
+            reverse(arr.begin(), arr.end());
+            return;
+        }
+        int s;
+        for(int i=arr.size()-1;i>=temp;i--){
+            if(arr[temp]<arr[i] ){
+                s = arr[temp];
+                arr[temp] = arr[i];
+                arr[i] = s;
+                break;
+            }
+        }
+            
+        
+        reverse(arr.begin()+temp+1,arr.end());
+    
+    }
+};
