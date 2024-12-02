@@ -34,8 +34,15 @@ Let i is the pointer for text string and j is the pointer for pattern string.
 * If the characters at i and j match each other, then the value of i and j is incremented by 1.
 * if the characters at i and j does not match, then j <-- 0 and i <-- i-n.
 
+![Screenshot 2024-12-03 002457](https://github.com/user-attachments/assets/b78d2ccd-1f4a-46df-818b-e45c62aff019)
 
         
+
+
+
+
+
+
 ## KMP Algorithm - 
 
 Time Complexity - O(n+m)
@@ -96,3 +103,6 @@ Time Complexity - O(n+m)
         return res;
     }
     };
+
+
+In this an Longest prefix Suffix array is made.
