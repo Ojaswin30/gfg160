@@ -1,3 +1,9 @@
+#include<string>
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+
 class Solution {
 public:
     string addBinary(string& s1, string& s2) {
@@ -27,3 +33,10 @@ public:
         return "0"; // In case the result is all zeros
     }
 };
+int main(){
+    Solution s;
+    string s1 = "0101", s2 = "0011";
+    cout<<s.addBinary(s1,s2);
+    return 0;
+
+}
